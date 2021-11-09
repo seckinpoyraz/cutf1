@@ -440,22 +440,21 @@ function hesapla(){
 	$("#gecmek_icin").html(alman_gereken.toFixed(2));
 
 	//Geçme Durumunu Göster
-	//önce finalsiz
-	if( kssn1>=60 && kssn2>=60 && kssn3>=60 && kssn4>=60 && kssn5>=60  ){
+	//önce finalli
+
+	if( sinif_gecme_notu >= 59.5 ){
+		$("#durum").html(gectin);
+	}else{
+		$("#durum").html(kaldin);
+	}
+
+	//sonra finalsiz	
+	if( kssn1>=60 && kssn2>=60 && kssn3>=60 && kssn4>=60 && kssn5>=60 && kssn6>=60  ){
 
 		if( yidn >= 79.5 ){
 			$("#durum").html(finalsiz);
 			$("#gecmek_icin").html("0.00");
 			$("#sgn").html(yidn.toFixed(2));
-		}
-
-	}else{
-		//sonra finalli
-
-		if( sinif_gecme_notu >= 59.5 ){
-			$("#durum").html(gectin);
-		}else{
-			$("#durum").html(kaldin);
 		}
 
 	}
