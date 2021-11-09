@@ -1,2 +1,3 @@
-# ctufsec1
- ÇÜTF Dönem 1 Puan Hesaplama Sistemi
+# ÇÜTF Dönem 1 Puan Hesaplama Sistemi
+ 
+https://seckinpoyraz.com/cutf
